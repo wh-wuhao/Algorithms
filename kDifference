@@ -4,6 +4,9 @@ Find pairs of elements, where the difference of the pair is k. Found the followi
 Thus, we return 3 as our answer.
 
 Solution: 
+We have to compare every each pair to get the total. There are n*(n-1) pair combinations. So the obvious solution is double loop.
+And it is O(n^2). 
+Can we do better? Normally binary search is our choice. Then we need to sort the arry. Together, the time effeciency is still O(n*lg(n));
 
 int kDifference(vector <int> a, int k) {
     sort(a.begin(), a.end());
